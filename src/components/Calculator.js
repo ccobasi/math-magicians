@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import calculate from './logic/calculator';
 
-function Calculator() {
+const Calculator = () => {
   const [calc, calcUpdate] = useState({ total: null, next: null, operation: null });
 
   const updateCalc = (e) => {
@@ -10,14 +10,14 @@ function Calculator() {
     if (currCalc.total === null) {
       currCalc.total = '0';
     }
-    if (currCalc.total !== null) {
+    if (currCalc.next !== null) {
       display.innerText = currCalc.next;
     } else {
       display.innerText = currCalc.total;
     }
+
     calcUpdate(currCalc);
   };
-
   return (
     <div className="App">
       <div className="calculator">
@@ -55,6 +55,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
