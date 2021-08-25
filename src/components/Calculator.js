@@ -19,38 +19,43 @@ const Calculator = () => {
     calcUpdate(currCalc);
   };
   return (
-    <div className="App">
-      <div className="calculator">
-        <div className="display">
-          0
-        </div>
-        <div className="operators">
-          <button type="button" onClick={updateCalc} value="AC">AC</button>
-          <button type="button" onClick={updateCalc} value="+/-">+/-</button>
-          <button type="button" onClick={updateCalc} value="%">%</button>
-          <button type="button" onClick={updateCalc} value="÷" className="orange">÷</button>
-        </div>
-        <div className="digits">
-          <button type="button" onClick={updateCalc} value="7">7</button>
-          <button type="button" onClick={updateCalc} value="8">8</button>
-          <button type="button" onClick={updateCalc} value="9">9</button>
-          <button type="button" onClick={updateCalc} value="x" className="orange">x</button>
-          <br />
-          <button type="button" onClick={updateCalc} value="4">4</button>
-          <button type="button" onClick={updateCalc} value="5">5</button>
-          <button type="button" onClick={updateCalc} value="6">6</button>
-          <button type="button" onClick={updateCalc} value="-" className="orange">-</button>
-          <br />
-          <button type="button" onClick={updateCalc} value="1">1</button>
-          <button type="button" onClick={updateCalc} value="2">2</button>
-          <button type="button" onClick={updateCalc} value="3">3</button>
-          <button type="button" onClick={updateCalc} value="+" className="orange">+</button>
-          <br />
-        </div>
-        <div className="digit">
-          <button type="button" onClick={updateCalc} value="0" className="zero">0</button>
-          <button type="button" onClick={updateCalc} value=".">.</button>
-          <button type="button" onClick={updateCalc} value="=" className="orange">=</button>
+    <div className="calcWrap">
+      <div className="calcQuote">
+        Let&apos;s do some math!
+      </div>
+      <div className="App">
+        <div className="calculator">
+          <div className="display">
+            0
+          </div>
+          <div className="operators">
+            <button type="button" onClick={updateCalc} value="AC">AC</button>
+            <button type="button" onClick={updateCalc} value="+/-">+/-</button>
+            <button type="button" onClick={updateCalc} value="%">%</button>
+            <button type="button" onClick={updateCalc} value="÷" className="orange">÷</button>
+          </div>
+          <div className="digits">
+            <button type="button" onClick={updateCalc} value="7">7</button>
+            <button type="button" onClick={updateCalc} value="8">8</button>
+            <button type="button" onClick={updateCalc} value="9">9</button>
+            <button type="button" onClick={updateCalc} value="x" className="orange">x</button>
+            <br />
+            <button type="button" onClick={updateCalc} value="4">4</button>
+            <button type="button" onClick={updateCalc} value="5">5</button>
+            <button type="button" onClick={updateCalc} value="6">6</button>
+            <button type="button" onClick={updateCalc} value="-" className="orange">-</button>
+            <br />
+            <button type="button" onClick={updateCalc} value="1">1</button>
+            <button type="button" onClick={updateCalc} value="2">2</button>
+            <button type="button" onClick={updateCalc} value="3">3</button>
+            <button type="button" onClick={updateCalc} value="+" className="orange">+</button>
+            <br />
+          </div>
+          <div className="digit">
+            <button type="button" onClick={updateCalc} value="0" className="zero">0</button>
+            <button type="button" onClick={updateCalc} value=".">.</button>
+            <button type="button" onClick={updateCalc} value="=" className="orange">=</button>
+          </div>
         </div>
       </div>
     </div>
